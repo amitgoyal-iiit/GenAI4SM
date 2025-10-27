@@ -1,0 +1,11 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Sponsors</h1>
+    {% if content %}
+        {{ content | markdown }}
+    {% endif %}
+</div>
+{% endblock %}
