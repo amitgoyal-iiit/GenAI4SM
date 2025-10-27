@@ -9,11 +9,11 @@
   }
   .back h2 {
     font-family: "Lato", sans-serif;
-    font-weight: 900;
+    font-weight: 700;
   }
 </style>
 
-<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 100px;">
   <div class="row header p-6 m-5">
     <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
       <h2>
@@ -29,10 +29,7 @@
 
 {% block content %}
 
-{{ readme | markdown }}
+{{ welcome | markdown }}
 
-<!-- Organizers -->
-{{ components.section("Organizers") }}
-{{ components.organizergroup(committee) }}
 
 {% endblock %}

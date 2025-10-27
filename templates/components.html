@@ -58,7 +58,7 @@ workshopgroup
             <div class="m-3 text-muted">
               <h3>
                 <a href="speaker_{{speaker.UID}}.html" class="main-title">
-                  {{speaker.title}}
+                  {{speaker.talk_title|safe}}
                 </a>
               </h3>
             </div>
@@ -67,8 +67,12 @@ workshopgroup
                 {{speaker.speaker}}  /  {{speaker.institution}}
               </span>
             </div>
+            <p></p>
             <div class="m-3">
-              {{speaker.abstract|safe}}
+              {{speaker.talk_abstract|safe}}
+            </div>
+            <div class="m-3">
+              <b>Speaker Bio:</b> {{speaker.bio|safe}}
             </div>
           </div>
         </div>
@@ -78,6 +82,43 @@ workshopgroup
 </div>
 {% endfor %}
 {%- endmacro %}
+
+{% macro papersgroup(papers) -%}
+{% for paper in papers %}
+<div class="row p-4">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-10 col-sm-6">
+
+            <div class="m-3 text-muted">
+
+              <h3>
+                  <!--{{paper.sessions}} | {{paper.UID}} || -->
+                  {{paper.title}}
+
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                {{paper.authors}}
+              </span>
+            </div>
+            <div class="m-3">
+              <b>Abstract:</b> {{paper.abstract|safe}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{%- endmacro %}
+
+
+
 
 {% macro organizergroup(committee) -%}
 <div class="row">
@@ -155,6 +196,7 @@ workshopgroup
     data-interval="false"
   >
     <div class="carousel-inner cards" role="listbox">
+
       {% for openreview in papers %}
       {% if loop.index % 3 == 1 %}
       <div class="carousel-item {% if loop.index == 1%} active{% endif %}">
@@ -173,6 +215,7 @@ workshopgroup
                 {% endfor %}
               </h6>
               <center>
+
                 <img
                   class="cards_img lazy-load-img"
                   data-src="https://iclr.github.io/iclr-images/{{openreview.UID}}.png"
