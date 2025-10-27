@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- External Javascript libs_ext  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+            integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+
+    <title>ML4SM 2023: Submissions</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="static/images/ml4sm.png"
+                    height="auto"
+            width="180px"
+            />
+        </a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="dates.html">Dates</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="submissions.html">Submissions</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="keynotes.html">Keynotes</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+ 
+
+<div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+         
+    </div>
+    <!-- Content -->
+    <div class="content">
+        
+
+<!-- Call for Papers -->
+<div class="border-top my-3"></div>
+<div class="row p-4" id="faq">
+  <div class="col-12 bd-content">
+    <h2 class="text-center">Call for Papers</h2>
+  </div>
+</div>
+<h1>Call For Papers</h1>
+<p>Streaming media have been seeing massive year of year growth in terms of consumption hours recently.  For many people, streaming services like Netflix, Spotify, YouTube, etc. have become part of everyday life and accessing and consuming media content via streaming is now the norm for people of all ages. Powered by Machine Learning (ML) algorithms, streaming services are becoming one the most visible and impactful applications of ML that directly interact with people and influence their lives.</p>
+<p>Despite the rapid growth of streaming services, the research discussions around ML for streaming media remain fragmented across different conferences and workshops.  Also, the gap between academic research and constraints and requirements in industry limits the broader impact of many contributions from academia.  Therefore, we believe that there is an urgent need to: (i) build connections and bridge the gap by bringing together researchers and practitioners from both academia and industry working on these problems, (ii) attract ML researchers from other areas to streaming media problems, and (iii) bring up the pain points and battle scars in industry to which academia researchers can pay more attention.</p>
+<p>With this motivation in mind, we are organizing a workshop on Machine Learning for Streaming Media in conjunction with the WebConf 2023.  We invite quality research contributions, including original research, preliminary research results, and proposals for new work, to be submitted. All submitted papers will be peer reviewed by the program committee and judged for their relevance to the workshop, especially to the topics identified below, and their potential to generate discussion. Accepted submissions will be presented at the workshop and will be published in the companion (workshop) proceedings of the WebConf 2023.  We welcome research that has been previously published or is under review elsewhere.  Such articles should be clearly identified at the time of submission and will not be published in the proceedings.</p>
+<h1>Workshop Topics</h1>
+<p>The main topics we would like to consider for this workshop are</p>
+<h4>Content Understanding</h4>
+<ul>
+<li>Multimodal representation learning</li>
+<li>Feature extraction for audio, video, and image content</li>
+<li>Knowledge Graph generation for streaming media</li>
+<li>Semi-supervised learning for content understanding</li>
+<li>Metadata enrichment for music, podcast, video catalog</li>
+</ul>
+<h4>Search and recommendation for streaming media</h4>
+<ul>
+<li>Named entity recognition (e.g. identifying celebrities, hosts, artists)</li>
+<li>Conversational systems</li>
+<li>Reward modeling and shaping</li>
+<li>Item cold start problems and challenges</li>
+<li>Designing scalable ML systems</li>
+<li>Heterogeneous content recommendation</li>
+<li>Learning to rank</li>
+<li>Transfer learning</li>
+<li>Explainable recommendations</li>
+<li>Representation learning</li>
+<li>Graph learning algorithms for streaming media</li>
+</ul>
+<h4>Measurement, Metrics &amp; Evaluation</h4>
+<ul>
+<li>Evaluation methodologies for streaming media search and recommendations</li>
+<li>Methodologies for valuation of content</li>
+<li>Measuring business impact of recommendation systems</li>
+<li>Life-time value modeling</li>
+<li>Churn prediction &amp; retention modeling</li>
+<li>User Studies &amp; Human-In the Loop</li>
+<li>User studies on real-world recommenders – Human-In the loop recommendations</li>
+<li>Mixed methods research</li>
+<li>User studies on preference elicitation</li>
+</ul>
+<h4>Trust, Safety &amp; Algorithmic Fairness</h4>
+<ul>
+<li>Identifying misinformation and disinformation – Algorithmic fairness in recommendations</li>
+<li>Hate-speech and fake news detection</li>
+<li>Content moderation</li>
+<li>Societal impact of recommendation systems for streaming media</li>
+</ul>
+<h4>Machine learning to optimize streaming quality of experience</h4>
+<h1>Important dates</h1>
+<ul>
+<li>Submission deadline: 24th of February 2023             </li>
+<li>Author notification: 3rd of March 2023</li>
+<li>Camera-ready version deadline: 15th of March 2023</li>
+<li>Workshop: Sunday, April 30th 2023  </li>
+</ul>
+<p>All deadlines are 11:59 pm, Anywhere on Earth (AoE).</p>
+<h1>Submission instructions</h1>
+<p>Submission link: <a href="https://easychair.org/conferences/?conf=thewebconf2023iwpd">https://easychair.org/conferences/?conf=thewebconf2023iwpd</a></p>
+<h2>Formatting instructions:</h2>
+<p>Submissions should not exceed six pages in length (including appendices and references). Papers must be submitted in PDF format according to the ACM template published in the ACM guidelines, selecting the generic “sigconf” sample. The PDF files must have all non-standard fonts embedded. Workshop papers must be self-contained and in English.</p>
+<h2>Registration and Attendance:</h2>
+<p>Further, at least one author of each accepted workshop paper has to register for the main conference. Workshop attendance is only granted for registered participants.</p>
+<h1>Workshop Website</h1>
+<p><a href="https://ml4streamingmedia-workshop.github.io/www/index.html">https://ml4streamingmedia-workshop.github.io/www/index.html</a></p>
+<h1>Workshop Organizers</h1>
+<ul>
+<li>Sudarshan Lamkhede - Manager, Machine Learning - Search and Recommendations, Netflix Research.</li>
+<li>Praveen Chandar - Staff Research Scientist,  Spotify</li>
+<li>Vladan Radosavljevic - Machine Learning Engineering Manager, Spotify</li>
+<li>Amit Goyal - Senior Applied Scientist, Amazon Music</li>
+<li>Lan Luo - Associate Professor of Marketing, University of Southern California</li>
+</ul>
+<p>If you have any questions please do not hesitate to reach out to the workshop organizers via <em>organizers-ml4sm at googlegroups dot com</em></p>
+
+<!-- papers -->
+<div class="border-top my-3"></div>
+<div class="row p-4" id="faq">
+  <div class="col-12 bd-content">
+    <h2 class="text-center">Accepted Submissions</h2>
+  </div>
+</div>
+<div class="speakers">
+  
+</div>
+
+
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2022-23 ML4SM Organization Committee</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>

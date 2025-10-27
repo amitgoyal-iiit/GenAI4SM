@@ -1,0 +1,285 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="image" property="og:image" content="static/images/ml4sm.png">
+    <meta name="title" property="og:title" content="Workshop on Machine Learning for Streaming Media at the WebConf 2023">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- External Javascript libs_ext  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+            integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+            integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+            integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+            crossorigin="anonymous"></script>
+
+
+    <!-- Library libs_ext -->
+    <script src="static/js/libs_ext/typeahead.bundle.js"></script>
+
+
+    <!--    Internal Libs -->
+    <script src="static/js/data/api.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+          crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+            href="static/css/Lato.css"
+            rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet"/>
+    <link
+            href="static/css/Cuprum.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/main.css"/>
+<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
+    <link rel="stylesheet" href="static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="static/css/typeahead.css"/>
+
+    <title>ML4SM 2023</title>
+    
+</head>
+
+<body>
+<!-- NAV -->
+
+<nav
+        class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+        id="main-nav"
+>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img
+                    class="logo" src="static/images/ml4sm.png"
+                    height="auto"
+            width="180px"
+            />
+        </a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+                class="collapse navbar-collapse text-right flex-grow-1"
+                id="navbarNav"
+        >
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="dates.html">Dates</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="submissions.html">Submissions</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="keynotes.html">Keynotes</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- User Overrides -->
+
+<style>
+  .back {
+    background: url("static/images/pexels-lacza-4544549.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 100px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        <br><br>Workshop on Machine Learning for Streaming Media<br>at the WebConf 2023
+      </h2>
+      <h2 class="p-5">
+        Sunday, April 30, 2023
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+    <!-- Tabs -->
+    <div class="tabs">
+         
+    </div>
+    <!-- Content -->
+    <div class="content">
+        
+
+<p>Streaming media have been seeing massive year of year growth in terms of consumption hours recently.  For many people, streaming services have become part of everyday life and accessing and consuming media content via streaming is now the norm for people of all ages. Powered by Machine Learning (ML) algorithms, streaming services are becoming one the most visible and impactful applications of ML that directly interact with people and influence their lives.</p>
+<p>Despite the rapid growth of streaming services, the research discussions around ML for streaming media remain fragmented across different conferences and workshops.  Also, the gap between academic research and constraints and requirements in industry limits the broader impact of many contributions from academia.  Therefore, we believe that there is an urgent need to: (i) build connections and bridge the gap by bringing together researchers and practitioners from both academia and industry working on these problems, (ii) attract ML researchers from other areas to streaming media problems, and (iii) bring up the pain points and battle scars in industry to which academia researchers can pay more attention.</p>
+<p>With this motivation in mind, we are organizing a workshop on Machine Learning for Streaming Media in conjunction with the WebConf 2023.  We invite researchers, practitioners, students, and faculty to join us in discussing challenges and machine learning solutions in this space. We also invite quality research contributions, including original research, preliminary research results, and proposals for new work, to be submitted. See the Call for Papers for more details.</p>
+<h3>Important Dates</h3>
+<ul>
+<li>Submission deadline: 24th of February 2023             </li>
+<li>Author notification: 3rd of March 2023</li>
+<li>Camera-ready version deadline: 15th of March 2023</li>
+<li>Workshop: Sunday, April 30th 2023  </li>
+</ul>
+<p>All deadlines are 11:59 pm, Anywhere on Earth (AoE).</p>
+<h3>Contact</h3>
+<p>organizers-ml4sm at googlegroups dot com</p>
+<h3>Organizers</h3>
+<ul>
+<li><strong>Sudarshan Lamkhede</strong>, Netflix Research <a href="https://www.linkedin.com/in/sudarshanlamkhede/"><img src="static/images/linkedin-logo.png" alt="Sudarshan's LinkedIn Profile" width="20" padding="5"/></a></li>
+<li><strong>Praveen Chandar</strong>, Spotify <a href="https://www.linkedin.com/in/praveenchandar/"><img src="static/images/linkedin-logo.png" alt="Praveen's LinkedIn Profile" width="20" padding="5"/></a></li>
+<li><strong>Vladan Radosavljevic</strong>, Spotify <a href="https://www.linkedin.com/in/vladan-radosavljevic-69244265/"><img src="static/images/linkedin-logo.png" alt="Vladan's LinkedIn Profile" width="20" padding="5"/></a></li>
+<li><strong>Amit Goyal</strong>, Amazon Music <a href="https://www.linkedin.com/in/amitgoyal18/"><img src="static/images/linkedin-logo.png" alt="Amit's LinkedIn Profile" width="20" padding="5"/></a></li>
+<li><strong>Lan Luo</strong>, University of Southern California, <a href="https://www.linkedin.com/in/lan-luo-b637a546/"><img src="static/images/linkedin-logo.png" alt="Amit's LinkedIn Profile" width="20" padding="5"/></a></li>
+</ul>
+<h3>Program Committee</h3>
+<ul>
+<li>Xiangyu (Daneo) Zhang, Tech Lead [TikTok]</li>
+<li>Massimo Quadrana, ML Researcher [Apple Music]</li>
+<li>James Dreiss, Senior ML Manager [Disney Streaming]</li>
+<li>Valerie Pocus, ML Manager [Disney Streaming]</li>
+<li>Daniel Nemirovsky, ML Manager [Disney Streaming]</li>
+<li>Jayson Salkey, Lead ML Engineer [Disney Streaming]</li>
+<li>Rishabh Mehrotra, Director of Machine Learning [ShareChat]</li>
+<li>Fabrizio Silvestri, Profesor [University of Rome]</li>
+<li>Maryam Toloubidokhti, Ph.D. Student and Research Assistant [University of Rochester]</li>
+<li>Rahul Ghosh, Ph.D. Student and Research Assistant [University of Minnesota]</li>
+<li>Zahra Nazari, Senior Research Scientist [Spotify]</li>
+<li>Claudia Hauff, Staff Research Scientist [Spotify]</li>
+<li>Oguz Semerci, Staff Machine Learning Engineer [Spotify]</li>
+<li>Amina Shabeer, Sr. Applied Scientist Manager [Amazon]</li>
+<li>Peiyao Wang, Applied Scientist [Amazon]</li>
+<li>Zhan Shi [Amazon]</li>
+<li>Emanuele Coviello, Sr. Applied Scientist [Amazon]</li>
+<li>Alexander Buchholz, Applied Scientist [Amazon]</li>
+<li>Jan Malte Lichtenberg, Applied Scientist [Amazon]</li>
+<li>Kimi Song, Data Scientist [Amazon]</li>
+<li>Raza Khan, Applied Scientist [Amazon]</li>
+<li>Christian Siagian, Applied Scientist [Amazon]</li>
+<li>Dibyajyoti Pati, Data Scientist [Amazon]</li>
+<li>Becky Zhang, Research Scientist [Amazon]</li>
+<li>Chelsea Weaver, Research Scientist [Amazon]</li>
+<li>Vito Bellini, Applied Scientist [Amazon]</li>
+<li>Giuseppe Di Benedetto, Applied Scientist [Amazon]</li>
+<li>Yannik Stein, Applied Scientist [Amazon]</li>
+<li>Orpaz Goldstein, Applied Scientist [Amazon]</li>
+<li>Begum Taskazan, PhD Student, Northeaster University</li>
+<li>Pallavi Koppol, PhD Student, CMU</li>
+<li>Mawulolo Ameko, Applied Scientist, Microsoft</li>
+</ul>
+
+
+
+    </div>
+</div>
+
+
+
+<!-- Google Analytics -->
+<script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("js", new Date());
+  gtag("config", "UA-");
+</script>
+
+<!-- Footer -->
+<footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2022-23 ML4SM Organization Committee</p>
+    </div>
+</footer>
+
+<!-- Code for hash tags -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    if (window.location.hash !== "") {
+      $(`a[href="${window.location.hash}"]`).tab("show");
+    }
+
+    $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+      const hash = $(e.target).attr("href");
+      if (hash.substr(0, 1) === "#") {
+        const position = $(window).scrollTop();
+        window.location.replace(`#${hash.substr(1)}`);
+        $(window).scrollTop(position);
+      }
+    });
+  });
+</script>
+<!--    <script src="static/js/modules/lazyLoad.js"></script>-->
+
+</body>
+</html>
