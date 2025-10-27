@@ -3,7 +3,7 @@ tagline: <br><br>Workshop on Generative AI for Streaming Media<br>at the WSDM 20
 date: Feb 26, 2026
 analytics: UA-
 logo:
-  image: ./static/images/ml4sm.png
+  image: static/images/ml4sm.png
   width: 180px
   height: auto
 # uncomment the following line to show the site title next to the logo image
@@ -11,7 +11,7 @@ logo:
 page_title:
   prefix: 'GenAI4SM 2026'
   separator: ': '
-background_image: ./static/images/pexels-lacza-4544549.jpg
+background_image: static/images/pexels-lacza-4544549.jpg
 organization: GenAI4SM Organization Committee
 
 ## Remove or change to your chat server.
