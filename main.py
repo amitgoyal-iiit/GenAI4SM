@@ -221,11 +221,11 @@ def generator():
 def static_files():
     for file in os.scandir('static'):
         if file.is_file():
-            yield 'static', {'path': file.name}
+            yield 'static', {'filename': file.name}
         elif file.is_dir():
             for subfile in os.scandir(os.path.join('static', file.name)):
                 if subfile.is_file():
-                    yield 'static', {'path': f'{file.name}/{subfile.name}'}
+                    yield 'static', {'filename': f'{file.name}/{subfile.name}'}
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="MiniConf Portal Command Line")
