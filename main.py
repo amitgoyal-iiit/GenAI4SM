@@ -42,7 +42,7 @@ def main(site_data_path):
 app = Flask(__name__)
 app.config.from_object(__name__)
 freezer = Freezer(app)
-markdown = Markdown(app, extensions=['footnotes', 'tables'])
+markdown = Markdown(app)
 
 
 # MAIN PAGES
@@ -70,66 +70,50 @@ def favicon():
 @app.route("/index.html")
 def home():
     data = _data()
-    #data["welcome"] = open("welcome.md").read()
+    data["readme"] = open("README.md").read()
     data["committee"] = site_data["committee"]["committee"]
     return render_template("index.html", **data)
 
-@app.route("/schedule.html")
+
+@app.route("/help.html")
+def about():
+    data = _data()
+    data["FAQ"] = site_data["faq"]["FAQ"]
+    return render_template("help.html", **data)
+
+
+@app.route("/papers.html")
+def papers():
+    data = _data()
+    data["papers"] = site_data["papers"]
+    return render_template("papers.html", **data)
+
+
+@app.route("/paper_vis.html")
+def paper_vis():
+    data = _data()
+    return render_template("papers_vis.html", **data)
+
+
+@app.route("/calendar.html")
 def schedule():
     data = _data()
-    data["schedule"] = open("schedule.md").read()
+    data["day"] = {
+        "speakers": site_data["speakers"],
+        "highlighted": [
+            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
+        ],
+    }
     return render_template("schedule.html", **data)
 
-@app.route("/dates.html")
-def impdates():
+
+@app.route("/workshops.html")
+def workshops():
     data = _data()
-    data["dates"] = open("dates.md").read()
-    return render_template("dates.html", **data)
-
-# @app.route("/previous.html")
-# def previous():
-#     data = _data()
-#     data["previous"] = open("previous.md").read()
-#     return render_template("previous.html", **data)
-
-#
-# @app.route("/privacy_policy.html")
-# def privacy_policy():
-#     data = _data()
-#     data["privacy_policy"] = open("privacy_policy.md").read()
-#     return render_template("privacy_policy.html", **data)
-#
-# @app.route("/code_of_conduct.html")
-# def code_of_conduct():
-#     data = _data()
-#     data["code_of_conduct"] = open("code_of_conduct.md").read()
-#     return render_template("code_of_conduct.html", **data)
-
-# @app.route("/papers.html")
-# def papers():
-#     data = _data()
-#     data["papers"] = site_data["papers"]
-#     return render_template("papers.html", **data)
-
-@app.route("/submissions.html")
-def submissions():
-    data = _data()
-    data["cfp"] = open("cfp.md").read()
-    data["papers"] = site_data["papers"]
-    return render_template("submissions.html", **data)
-
-
-@app.route("/keynotes.html")
-def speaker():
-    data = _data()
-    data["speakers"] = site_data["speakers"]
-    return render_template("keynotes.html", **data)
-
-
-# @app.route("/sponsors.html")
-# def sponsors():
-#     data = _data()
-#     return render_template("sponsors.html", **data)
+    data["workshops"] = [
+        format_workshop(workshop) for workshop in site_data["workshops"]
+    ]
+    return render_template("workshops.html", **data)
 
 
 def extract_list_field(v, key):
@@ -177,6 +161,42 @@ def format_workshop(v):
     }
 
 
+# ITEM PAGES
+
+
+@app.route("/poster_<poster>.html")
+def poster(poster):
+    uid = poster
+    v = by_uid["papers"][uid]
+    data = _data()
+    data["paper"] = format_paper(v)
+    return render_template("poster.html", **data)
+
+
+@app.route("/speaker_<speaker>.html")
+def speaker(speaker):
+    uid = speaker
+    v = by_uid["speakers"][uid]
+    data = _data()
+    data["speaker"] = v
+    return render_template("speaker.html", **data)
+
+
+@app.route("/workshop_<workshop>.html")
+def workshop(workshop):
+    uid = workshop
+    v = by_uid["workshops"][uid]
+    data = _data()
+    data["workshop"] = format_workshop(v)
+    return render_template("workshop.html", **data)
+
+
+@app.route("/chat.html")
+def chat():
+    data = _data()
+    return render_template("chat.html", **data)
+
+
 # FRONT END SERVING
 
 
@@ -204,10 +224,12 @@ def serve(path):
 
 @freezer.register_generator
 def generator():
-    # for paper in site_data["papers"]:
-    #     yield "poster", {"poster": str(paper["UID"])}
+    for paper in site_data["papers"]:
+        yield "poster", {"poster": str(paper["UID"])}
     for speaker in site_data["speakers"]:
         yield "speaker", {"speaker": str(speaker["UID"])}
+    for workshop in site_data["workshops"]:
+        yield "workshop", {"workshop": str(workshop["UID"])}
 
     for key in site_data:
         yield "serve", {"path": key}
