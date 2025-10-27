@@ -74,17 +74,31 @@ def home():
     data["committee"] = site_data["committee"]["committee"]
     return render_template("index.html", **data)
 
-@app.route("/schedule.html")
-def schedule():
+@app.route("/submissions.html")
+def submissions():
     data = _data()
-    data["schedule"] = open("schedule.md").read()
-    return render_template("schedule.html", **data)
+    data["cfp"] = open("cfp.md").read()
+    data["papers"] = site_data["papers"]
+    return render_template("submissions.html", **data)
 
 @app.route("/dates.html")
 def impdates():
     data = _data()
     data["dates"] = open("dates.md").read()
     return render_template("dates.html", **data)
+
+@app.route("/keynotes.html")
+def speaker():
+    data = _data()
+    data["speakers"] = site_data["speakers"]
+    return render_template("keynotes.html", **data)
+
+@app.route("/schedule.html")
+def schedule():
+    data = _data()
+    data["schedule"] = open("schedule.md").read()
+    return render_template("schedule.html", **data)
+
 
 # @app.route("/previous.html")
 # def previous():
@@ -111,19 +125,8 @@ def impdates():
 #     data["papers"] = site_data["papers"]
 #     return render_template("papers.html", **data)
 
-@app.route("/submissions.html")
-def submissions():
-    data = _data()
-    data["cfp"] = open("cfp.md").read()
-    data["papers"] = site_data["papers"]
-    return render_template("submissions.html", **data)
 
 
-@app.route("/keynotes.html")
-def speaker():
-    data = _data()
-    data["speakers"] = site_data["speakers"]
-    return render_template("keynotes.html", **data)
 
 
 # @app.route("/sponsors.html")
