@@ -135,6 +135,8 @@ def schedule():
 #     return render_template("sponsors.html", **data)
 
 
+
+
 def extract_list_field(v, key):
     value = v.get(key, "")
     if isinstance(value, list):
@@ -215,6 +217,15 @@ def generator():
     for key in site_data:
         yield "serve", {"path": key}
 
+@freezer.register_generator
+def static_files():
+    for file in os.scandir('static'):
+        if file.is_file():
+            yield 'static', {'path': file.name}
+        elif file.is_dir():
+            for subfile in os.scandir(os.path.join('static', file.name)):
+                if subfile.is_file():
+                    yield 'static', {'path': f'{file.name}/{subfile.name}'}
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="MiniConf Portal Command Line")
