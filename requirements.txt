@@ -1,5 +1,7 @@
-flask
-frozen-flask
-Flask-Markdown
-tqdm
-PyYAML
+Werkzeug==2.0.3
+Flask==2.0.3
+MarkupSafe==2.0.1
+Flask-Markdown==0.3
+Frozen-Flask==0.15
+PyYAML==6.0.1
+tqdm==4.65.0
