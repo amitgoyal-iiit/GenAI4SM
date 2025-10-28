@@ -63,7 +63,7 @@ The main topics we would like to consider for this workshop are
 All deadlines are 11:59 pm, Anywhere on Earth (AoE).
 
 # Submission instructions
-Submission link: [https://easychair.org/conferences/?conf=thewebconf2023iwpd](https://easychair.org/conferences/?conf=thewebconf2023iwpd)
+Submission link: [https://easychair.org/conferences?conf=genai4sm](https://easychair.org/conferences?conf=genai4sm)
 
 ## Formatting instructions:
 Submissions should not exceed six pages in length (including appendices and references). Papers must be submitted in PDF format according to the ACM template published in the ACM guidelines, selecting the generic “sigconf” sample. The PDF files must have all non-standard fonts embedded. Workshop papers must be self-contained and in English.
