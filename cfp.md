@@ -55,7 +55,7 @@ The main topics we would like to consider for this workshop are
 
 # Important dates
 
-   * Submission deadline: 1st of December 2025	 			
+   * Submission deadline: 21st of November 2025	 			
    * Author notification: 18th of December 2025
    * Camera-ready version deadline: 7th of January 2026
    * Workshop: 26th of February 2026 	
