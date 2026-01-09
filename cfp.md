@@ -57,7 +57,7 @@ The main topics we would like to consider for this workshop are
 
    * Submission deadline: <s>21st of November 2025</s> 1st of December 2025
    * Author notification: 18th of December 2025
-   * Camera-ready version deadline: 7th of January 2026
+   * Camera-ready version deadline: 6th of February 2026
    * Workshop: 26th of February 2026 	
 
 All deadlines are 11:59 pm, Anywhere on Earth (AoE).
