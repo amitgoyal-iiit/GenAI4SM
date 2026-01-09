@@ -10,8 +10,8 @@ With this motivation in mind, we are organizing a workshop on Generative AI for 
 
 # Important dates
 
-   * Submission deadline: <s>21st of November 2025</s> 1st of December 2025	
-   * Author notification: 18th of December 2025
+   * Submission deadline: <s> 1st of December 2025 </s>	
+   * Author notification: <s> 18th of December 2025 </s>
    * Camera-ready version deadline: 6th of February 2026
    * Workshop: 26th of February 2026 
 
