@@ -2,7 +2,7 @@
 
 Please pay attention to the following dates:
 
-   * Submission deadline: <s>21st of November 2025</s> 1st of December 2025	
+   * Submission deadline: 1st of December 2025	
    * Author notification: December 18th of  2025
    * Camera-ready version deadline: January 7th of  2026 
    * Workshop: 26th of February 2026 
