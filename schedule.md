@@ -59,7 +59,7 @@
 
 | Time | Talk |
 |------|------|
-| 16:00 - 16:45 | **Keynote.** Amanpreet Kaur / Google<br>*TBD* |
+| 16:00 - 16:45 | **Keynote.** Amanpreet Kaur and Ajay Yadav / Google<br>*TBD* |
 | 16:45 - 17:00 | **Paper.** Ravi Gupta, Shiksha Patel, Nishant Singh and Ramya Kakarlapudi<br>*DiTRoute: Diffusion-Guided Adaptive Token Routing for Distributed Video-LLM Inference on Heterogeneous Streaming Edges* (AMD, Micron) |
 | 17:00 - 17:05 | **Closing Remarks:** Organizers |
 
