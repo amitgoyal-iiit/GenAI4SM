@@ -1,6 +1,6 @@
 # Event Schedule
 
-## GenAI4SM 2025 @ WSDM
+## GenAI4SM 2026 @ WSDM
 
 ---
 
