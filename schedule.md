@@ -32,7 +32,7 @@
 | Time | Talk |
 |------|------|
 | 11:00 - 11:45 | **Keynote.** Thorsten Joachims / Cornell University<br>*Towards Steerable GenAI for Recommendation* |
-| 11:45 - 12:00 | **Paper.** Liping Zhang and Tracy King<br>*VTCR: Multimodal Visual–Text Cross-Attention Reranking for Streaming Media and Creative Content Discovery* (Adobe) |
+| 11:45 - 12:00 | **Paper.** Abhishek Dharmaratnakar, Srivaths Ranganathan, Debanshu Das and Anushree Sinha<br>*Generative AI for Video Trailer Synthesis: From Extractive Heuristics to Autoregressive Creativity* (Google) |
 | 12:00 - 12:45 | **Keynote.** Harald Steck / Netflix<br>*On Collaborative Filtering for Conversational Recommender Systems* |
 
 ---
@@ -46,7 +46,7 @@
 | Time | Talk |
 |------|------|
 | 13:45 - 14:30 | **Keynote.** 'YZ' Yezhou Yang / Arizona State University<br>*Towards Controllable and Explainable Visual GenAI for Creativity* |
-| 14:30 - 14:45 | **Paper.** Abhishek Dharmaratnakar, Srivaths Ranganathan, Debanshu Das and Anushree Sinha<br>*Generative AI for Video Trailer Synthesis: From Extractive Heuristics to Autoregressive Creativity* (Google) |
+| 14:30 - 14:45 | **Paper.** Liping Zhang and Tracy King<br>*VTCR: Multimodal Visual–Text Cross-Attention Reranking for Streaming Media and Creative Content Discovery* (Adobe) |
 | 14:45 - 15:30 | **Keynote.** Qilin Qi / Prime Video<br>*Building Large-Scale Stream Prediction Models at Prime Video: Lessons from a Complex, High-Throughput Recommender System* |
 
 ---
