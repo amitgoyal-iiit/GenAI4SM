@@ -47,7 +47,7 @@
 |------|------|
 | 13:45 - 14:30 | **Keynote.** 'YZ' Yezhou Yang / Arizona State University<br>*Towards Controllable and Explainable Visual GenAI for Creativity* |
 | 14:30 - 14:45 | **Paper.** Liping Zhang and Tracy King<br>*VTCR: Multimodal Visual–Text Cross-Attention Reranking for Streaming Media and Creative Content Discovery* (Adobe) |
-| 14:45 - 15:30 | **Keynote.** Qilin Qi / Prime Video<br>*Building Large-Scale Stream Prediction Models at Prime Video: Lessons from a Complex, High-Throughput Recommender System* |
+| 14:45 - 15:30 | **Keynote.** Amanpreet Kaur and Ajay Yadav / Google<br>*Quality at Scale: Engineering Evaluation Frameworks for Multi-Agent Systems* |
 
 ---
 
@@ -59,7 +59,7 @@
 
 | Time | Talk |
 |------|------|
-| 16:00 - 16:45 | **Keynote.** Amanpreet Kaur and Ajay Yadav / Google<br>*Quality at Scale: Engineering Evaluation Frameworks for Multi-Agent Systems* |
+| 16:00 - 16:45 | **Keynote.** Qilin Qi / Prime Video<br>*Building Large-Scale Stream Prediction Models at Prime Video: Lessons from a Complex, High-Throughput Recommender System* |
 | 16:45 - 17:00 | **Paper.** Ravi Gupta, Shiksha Patel, Nishant Singh and Ramya Kakarlapudi<br>*DiTRoute: Diffusion-Guided Adaptive Token Routing for Distributed Video-LLM Inference on Heterogeneous Streaming Edges* (AMD, Micron) |
 | 17:00 - 17:05 | **Closing Remarks:** Organizers |
 
